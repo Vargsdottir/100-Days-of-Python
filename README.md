@@ -13,7 +13,7 @@
 ## List of Projects
 ### Beginner Level
 * **Day 001:** [Band Name Generator](https://github.com/Vargsdottir/100-Days-of-Python/tree/main/Day%20001)
-* **Day 002:**
+* **Day 002:** [Tip Calculator](https://github.com/Vargsdottir/100-Days-of-Python/tree/main/Day%20002)
 * **Day 003:**
 * **Day 004:**
 * **Day 005:**
