@@ -1,0 +1,15 @@
+print("The Love Calculator is calculating your score...")
+name1 = input("What is your name?\n")
+name2 = input("What is their name?\n")
+Names = list(name1.lower()) + list(name2.lower())
+
+EURT = str(Names.count('t') + Names.count('r') + Names.count('u') + Names.count('e'))
+EVOL = str(Names.count('l') + Names.count('o') + Names.count('v') + Names.count('e'))
+Score = int(EURT+EVOL)
+
+if Score < 10 or Score > 90:
+  print(f"Your score is {Score}, you go together like coke and mentos.")
+elif Score > 40 and Score < 50:
+  print(f"Your score is {Score}, you are alright together.")
+else:
+  print(f"Your score is {Score}.")
