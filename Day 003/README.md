@@ -5,5 +5,9 @@
 
 ![Screenshot](PizzaScreenshot1.png) 
 
+## Love Calculator
+> A project that takes two people's names and cross references them with the words TRUE LOVE to generate a compatiblity score.
+
+![Screenshot](LoveScreenshot.png)
 ## Treasure Island Game
 > WIP
