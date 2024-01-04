@@ -3,8 +3,11 @@ name1 = input("What is your name?\n")
 name2 = input("What is their name?\n")
 Names = list(name1.lower()) + list(name2.lower())
 
+#checking each name for the amount of times the letters T R U E  L O V E occur and turning the result into a string.
 EURT = str(Names.count('t') + Names.count('r') + Names.count('u') + Names.count('e'))
 EVOL = str(Names.count('l') + Names.count('o') + Names.count('v') + Names.count('e'))
+
+#concatenating the strings together to get the score then changing it into an interger to be interpreted.
 Score = int(EURT+EVOL)
 
 if Score < 10 or Score > 90:
