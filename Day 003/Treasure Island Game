@@ -1,0 +1,68 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Your rival has challenged you to a race to find the Treasure on a nearby island.")
+print("You have to win or you'll be the village laughing stock.")
+print("You set out immediately the next morning after finding your rival already gone.")
+print("Without wasting anymore time you race through the woods to a split in the path. To the right there is a path by the river where you see your rival is seen turning the bend. To the left is a dark path cutting through the woods.")
+InputError = True
+GameOver = False
+
+while InputError == True:
+  firstchoice=input("Will you go left or right.\n").lower()
+  if firstchoice == "left":
+    print("The path isn't as dreadful and scary as it looks and in fact cuts a far more direct pathway to the docks!")
+    print("You come to the docks without any issue and are able to rent a boat.")
+    print("However as you are crossing the channel -- you see your rival seemingly struggle to stay afloat in his boat.")
+    InputError = False
+    break
+  elif firstchoice == "right":
+    print("You fall into a trap left by your rival and break your leg. You are unable to continue the race and lose.")
+    InputError = False
+    GameOver = True
+    break
+  else:
+    print("Please enter left or right")
+    continue
+if GameOver == True:
+  print("It takes a day to climb out of the trap but you are able to drag yourself back to the village in shame. Though your rival never returned either...")
+InputError = True
+while InputError == True and GameOver == False:
+  secondchoice=input("Do you rescue them? Yes or No\n").lower()
+  if secondchoice == "yes":
+    print("It is a devious set up by your rival to tip your boat over!")
+    GameOver= True
+    break
+  elif secondchoice == "no":
+    print("The look of panic on your rivals face as their ruse fails to trick you is priceless.")
+    break
+  else:
+    print("Please enter Yes or No.")
+    continue
+if GameOver == True:
+  print("You end up falling into the swift current of the water.")
+  print("To your rival's credit they do attempt to rescue you once they realize the danger.")
+  print("But its too late and you drown.")
+  print("At least you wont live with the shame of losing. Game Over.")
+InputError = True
+if GameOver == False and InputError == True:
+  print("so far so good")
