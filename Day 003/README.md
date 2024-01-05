@@ -10,4 +10,6 @@
 
 ![Screenshot](LoveScreenshot.png)
 ## Treasure Island Game
-> WIP
+> A text-based choose your own adventure game where the goal is to find the treasure by making the right choices. I took what I learned from the Pizza Order Practice project and incorporated loops to capture incorrect inputs and create a better user experience.
+
+![Screenshot](TreasureScreenshot.png)
