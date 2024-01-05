@@ -20,49 +20,86 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-print("Your rival has challenged you to a race to find the Treasure on a nearby island.")
-print("You have to win or you'll be the village laughing stock.")
-print("You set out immediately the next morning after finding your rival already gone.")
-print("Without wasting anymore time you race through the woods to a split in the path. To the right there is a path by the river where you see your rival is seen turning the bend. To the left is a dark path cutting through the woods.")
+print('''Your rival has challenged you to a race to find the Treasure on a nearby island.
+You have to win or you'll be the village laughing stock.
+You set out immediately the next morning after finding your rival already gone.
+Without wasting anymore time you race through the woods to a split in the path. 
+To the right there is a path by the river where you see your rival is seen turning the bend. 
+To the left is a dark path cutting through the woods.''')
 InputError = True
 GameOver = False
 
 while InputError == True:
   firstchoice=input("Will you go left or right.\n").lower()
   if firstchoice == "left":
-    print("The path isn't as dreadful and scary as it looks and in fact cuts a far more direct pathway to the docks!")
-    print("You come to the docks without any issue and are able to rent a boat.")
-    print("However as you are crossing the channel -- you see your rival seemingly struggle to stay afloat in his boat.")
+    print('''The path isn't as dreadful and scary as it looks and in fact 
+cuts a far more direct pathway to the docks!
+You come to the docks without any issue and are able to rent a boat.
+However as you are crossing the channel -- you see your rival 
+seemingly struggle to stay afloat in his boat.''')
     InputError = False
     break
   elif firstchoice == "right":
-    print("You fall into a trap left by your rival and break your leg. You are unable to continue the race and lose.")
+    print('''You fall into a trap left by your rival and break your 
+leg. You are unable to continue the race and lose. It takes
+a day to climb out of the trap but you are able to drag 
+yourself back to the village in shame. 
+Though your rival never returned...
+Game Over.''')
     InputError = False
     GameOver = True
     break
   else:
     print("Please enter left or right")
     continue
-if GameOver == True:
-  print("It takes a day to climb out of the trap but you are able to drag yourself back to the village in shame. Though your rival never returned either...")
 InputError = True
 while InputError == True and GameOver == False:
   secondchoice=input("Do you rescue them? Yes or No\n").lower()
   if secondchoice == "yes":
-    print("It is a devious set up by your rival to tip your boat over!")
+    print('''It is a devious set up by your rival to tip your boat over!
+You end up falling into the swift current of the water.
+To your rival's credit they do attempt to rescue you once they realize the danger.
+But its too late and you drown.
+At least you wont live with the shame of losing. Game Over.''')
     GameOver= True
     break
   elif secondchoice == "no":
-    print("The look of panic on your rivals face as their ruse fails to trick you is priceless.")
+    print('''
+The look of panic on your rival's face as their ruse fails to trick you is priceless.
+The pair of you row your boats neck in neck towards the temple ruins on the island
+Your rival however, as the best swimmer in the village, abandons his boat and is able 
+reach the shore before you do! By time you get to the shore you are convinced that 
+you've all but lost. However when you enter you see the ghastly sight of your rival
+twitching with green leaking from his mouth and an empty bottle in their hand.
+There are three more bottles left and a plaque that says only ONE will reveal the treasure...
+''')
     break
   else:
     print("Please enter Yes or No.")
     continue
-if GameOver == True:
-  print("You end up falling into the swift current of the water.")
-  print("To your rival's credit they do attempt to rescue you once they realize the danger.")
-  print("But its too late and you drown.")
-  print("At least you wont live with the shame of losing. Game Over.")
+
 InputError = True
-if GameOver == False and InputError == True:
-  print("so far so good")
+if InputError == True and GameOver == False:
+  lastchoice = input("Which potion will you take? Red, Yellow, or Blue?\n").lower()
+  if lastchoice == "red":
+    print('''The potion immediately feels like you're drinking liquid fire.
+You cannot breathe from how much the heat overtakes your senses.
+The last thing you see is smoke coming from your mouth and a sharp
+burning in the center of your chest before you die. Game Over.''')
+  elif lastchoice == "yellow":
+    print('''There is a long moment where nothing at all happens after
+drinking the tasteless potion... and then, as if by magic a golden 
+door appears before your eyes. When you open it -- it is just 
+as promised. Treasure that will have you set for the rest of 
+your days. You Win!''')
+  elif lastchoice == "blue":
+    print('''You drink the chilly potion and for a moment, nothing happens.
+You think you might have gotten a dud potion but then the corners
+of your vision start to go black... until eventually you can 
+see nothing at all. You are blind. Left to fumble around 
+until some other adventurer finds you or you meet your doom 
+from a trap. Game Over.''')
+  else:
+    print('''Whether it's because your hand slipped, a lapse in attention, or a
+sudden fit of whimsy. You end up setting on an ancient trap and die
+in a spike trap that opens up under your feet. Game Over.''')
