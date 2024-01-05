@@ -30,7 +30,7 @@ InputError = True
 GameOver = False
 
 while InputError == True:
-  firstchoice=input("Will you go left or right.\n").lower()
+  firstchoice=input("Will you go left or right?\n").lower()
   if firstchoice == "left":
     print('''The path isn't as dreadful and scary as it looks and in fact 
 cuts a far more direct pathway to the docks!
