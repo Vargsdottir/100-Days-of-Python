@@ -6,7 +6,7 @@
 ![Screenshot](PizzaScreenshot1.png) 
 
 ## Love Calculator
-> A project that takes two people's names and cross references them with the words TRUE LOVE to generate a compatiblity score.
+> A project that takes two people's names and cross references them with the words TRUE LOVE to generate a compatiblity score. This introduced the use of lists into the course which were used to split the names into letters so they could be compared with words.
 
 ![Screenshot](LoveScreenshot.png)
 ## Treasure Island Game
