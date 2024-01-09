@@ -1,0 +1,6 @@
+import random
+
+names_string = input("Enter list of people willing to pay separated by a space.\n")
+names = names_string.split(" ")
+is_paying = random.randint(0, (len(names)-1))
+print(names[is_paying] + " is going to buy the meal today!")
