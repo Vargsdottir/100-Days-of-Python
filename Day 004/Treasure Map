@@ -1,0 +1,20 @@
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+map = [line1, line2, line3]
+print("Hiding your treasure! X marks the spot.")
+position = input("Where do you want to put the treasure? (A to C and 1 to 3. ex - B3)\n")
+first=list(position.upper()[0])
+second=list(position[1])
+coor1 = str(first[0])
+coor2 = int(second[0])-1
+
+if coor1 == "A":
+  coor1 = 0
+elif coor1 == "B":
+  coor1 = 1
+else:
+  coor1 = 2
+
+map[coor2][coor1]="X"
+print(f"{line1}\n{line2}\n{line3}")
