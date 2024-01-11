@@ -16,5 +16,11 @@ elif coor1 == "B":
 else:
   coor1 = 2
 
+# the alternative shown solution from the course which taught use of the index function
+# which is a more elegant and flexible option than using if/else:
+# abc = ["a", "b", "c"]
+# letter_index = abc.index(letter)
+# this allows for a number to be assigned to a b c.  
+
 map[coor2][coor1]="X"
 print(f"{line1}\n{line2}\n{line3}")
