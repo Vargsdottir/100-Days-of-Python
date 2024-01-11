@@ -1,0 +1,68 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+
+comp_choice = random.randint(0,2)
+your_choice = int(input("What do you choose? Rock (0), Paper (1) or Scissors(2)?\n"))
+
+if your_choice == 0:
+    your_symbol = rock
+elif your_choice == 1:
+    your_symbol = paper
+else:
+    your_symbol = scissors
+
+if comp_choice == 0:
+    comp_symbol = rock
+elif comp_choice == 1:
+    comp_symbol = paper
+else:
+    comp_symbol = scissors
+
+if your_choice == 0 and comp_choice == 2:
+    print(f'''{your_symbol}
+          Computer Picked:
+          {comp_symbol}
+          You Win!!''')
+elif comp_choice > your_choice:
+    print(f'''{your_symbol}
+          Computer Picked:
+          {comp_symbol}
+          You Lose!''')
+elif comp_choice < your_choice:
+    print(f'''{your_symbol}
+          Computer Picked:
+          {comp_symbol}
+          You Win!''')
+elif comp_choice == your_choice:
+    print(f'''{your_symbol}
+           Computer Picked:
+          {comp_symbol}
+          Its a draw!''')
+else:
+    print("You entered an invaild entry")
