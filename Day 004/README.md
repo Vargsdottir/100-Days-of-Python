@@ -10,3 +10,8 @@
 > Program takes input coordinate and accurately places it on a 3x3 grid.
 
 ![Screenshot](MapScreen.png)
+
+## Rock, Paper Scissors
+> Play a round of Rock Paper Scissors with a computer.
+
+![Screenshot](RPSscreen.png)
